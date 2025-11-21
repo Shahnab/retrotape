@@ -1,0 +1,5 @@
+{
+  "name": "RetroTape AI",
+  "description": "A nostalgic cassette tape player. Search for artists, generate mixtapes from music APIs, and enjoy retro vibes with Gemini AI generated themes.",
+  "requestFramePermissions": []
+}

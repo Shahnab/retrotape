@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RetroTape AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Share+Tech+Mono&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #1a1a1a;
+        color: #f0f0f0;
+        margin: 0;
+        overflow: hidden;
+      }
+      .font-hand {
+        font-family: 'Permanent Marker', cursive;
+      }
+      .font-mono-tech {
+        font-family: 'Share Tech Mono', monospace;
+      }
+      .font-sans {
+        font-family: 'Inter', sans-serif;
+      }
+      
+      /* Default Wood/Desk Texture Background (Fallback before AI gen) */
+      .bg-desk {
+        background-color: #282028;
+        background-image: 
+          radial-gradient(circle at 10% 20%, rgba(120, 50, 120, 0.2) 0%, transparent 40%),
+          radial-gradient(circle at 90% 80%, rgba(50, 200, 150, 0.1) 0%, transparent 40%),
+          url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+        background-blend-mode: normal, normal, multiply;
+        background-size: cover;
+      }
+
+      /* Tape Shine Effect */
+      .tape-shine {
+        background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,0.1) 100%);
+      }
+
+      /* Custom Scrollbar for library */
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+      
+      .animate-spin-slow {
+        animation: spin 3s linear infinite;
+      }
+      
+      @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^11.0.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
