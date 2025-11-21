@@ -20,7 +20,7 @@ const App: React.FC = () => {
   const [spotifyToken, setSpotifyToken] = useState<string | null>(null);
   
   // Background Gen State
-  const [bgImage, setBgImage] = useState<string | null>('/image/img1.png');
+  const [bgImage, setBgImage] = useState<string | null>('./image/img1.png');
   const [isGeneratingBg, setIsGeneratingBg] = useState(false);
   const [staticBgIndex, setStaticBgIndex] = useState(1); // Start with img1
 
@@ -251,7 +251,7 @@ const App: React.FC = () => {
     // Cycle through img1 to img6
     const nextIndex = staticBgIndex >= 6 ? 1 : staticBgIndex + 1;
     setStaticBgIndex(nextIndex);
-    setBgImage(`/image/img${nextIndex}.png`);
+    setBgImage(`./image/img${nextIndex}.png`);
   };
 
   const handleTapeDragEnd = (tape: Tape, info: any) => {
