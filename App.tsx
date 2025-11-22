@@ -313,6 +313,15 @@ const App: React.FC = () => {
         </button>
       </div>
 
+      {/* Visitor Counter */}
+      <div className="absolute bottom-4 left-4 z-50">
+        <img 
+          src="https://visitor-badge.laobi.icu/badge?page_id=Shahnab.retrotape" 
+          alt="Visitors"
+          className="opacity-70 hover:opacity-100 transition-opacity"
+        />
+      </div>
+
       <Notepad 
         onSearch={handleSearch} 
         isSearching={isSearching} 

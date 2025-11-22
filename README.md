@@ -1,5 +1,7 @@
 # 🎵 RetroTape
 
+![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=Shahnab.retrotape)
+
 A nostalgic 90s-style cassette tape player app that lets you search for artists and play their music in a retro interface.
 
 ## ✨ Features
